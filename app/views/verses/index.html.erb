@@ -1,0 +1,26 @@
+<h1>Listing verses</h1>
+
+<table>
+  <tr>
+    <th>Book</th>
+    <th>Chapter</th>
+    <th>Verse</th>
+    <th>Text</th>
+  </tr>
+
+<% @verses.each do |verse| %>
+  <tr>
+    <td><%=h verse.book_id %></td>
+    <td><%=h verse.chapter %></td>
+    <td><%=h verse.verse %></td>
+    <td><%=h verse.text %></td>
+    <td><%= link_to 'Show', verse %></td>
+    <td><%= link_to 'Edit', edit_verse_path(verse) %></td>
+    <td><%= link_to 'Destroy', verse, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New verse', new_verse_path %>

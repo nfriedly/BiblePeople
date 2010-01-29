@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  book_id: 
+  chapter: 
+  verse: 
+  text: MyString
+
+two:
+  book_id: 
+  chapter: 
+  verse: 
+  text: MyString
