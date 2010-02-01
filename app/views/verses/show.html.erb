@@ -1,0 +1,23 @@
+<p>
+  <b>Book:</b>
+  <%=h @verse.book_id %>
+</p>
+
+<p>
+  <b>Chapter:</b>
+  <%=h @verse.chapter %>
+</p>
+
+<p>
+  <b>Verse:</b>
+  <%=h @verse.verse %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @verse.text %>
+</p>
+
+
+<%= link_to 'Edit', edit_verse_path(@verse) %> |
+<%= link_to 'Back', verses_path %>
