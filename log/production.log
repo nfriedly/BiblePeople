@@ -1,0 +1,146 @@
+
+
+Processing ApplicationController#index (for 129.137.227.31 at 2010-01-25 15:12:25) [GET]
+
+ActionController::RoutingError (No route matches "/rails/info/properties" with {:method=>:get}):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /home/nfriedly/biblepeople.info/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 129.137.227.31 at 2010-01-25 15:12:25) [GET]
+
+ActionController::RoutingError (No route matches "/rails/info/properties" with {:method=>:get}):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /home/nfriedly/biblepeople.info/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 129.137.227.31 at 2010-01-25 15:12:35) [GET]
+
+ActionController::RoutingError (No route matches "/rails/info/properties" with {:method=>:get}):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /home/nfriedly/biblepeople.info/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 129.137.227.31 at 2010-01-25 15:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /home/nfriedly/biblepeople.info/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 129.137.233.224 at 2010-02-01 14:56:23) [GET]
+  Parameters: {"q"=>"Noah ark IN Genesis"}
+
+ActionController::RoutingError (No route matches "/search" with {:method=>:get}):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /home/nfriedly/biblepeople.info/public/404.html (404 Not Found)
