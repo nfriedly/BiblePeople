@@ -266,3 +266,1194 @@ Processing VersesController#show (for 127.0.0.1 at 2010-01-27 10:53:30) [GET]
 Rendering template within layouts/verses
 Rendering verses/show
 Completed in 122ms (View: 68, DB: 1) | 200 OK [http://localhost/verses/1]
+
+
+Processing SearchController#index (for 129.137.233.224 at 2010-02-01 15:14:52) [GET]
+  Parameters: {"q"=>""}
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 129.137.233.224 at 2010-02-01 15:15:46) [GET]
+  Parameters: {"q"=>""}
+
+ActionView::MissingTemplate (Missing template search/index.erb in view path app/views):
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.233.224 at 2010-02-01 15:18:29) [GET]
+  Parameters: {"q"=>""}
+
+ActionView::MissingTemplate (Missing layout layouts/default.erb in view path app/views):
+  app/controllers/application_controller.rb:12:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 14:38:16) [GET]
+  Parameters: {"q"=>"asdf"}
+
+NameError (uninitialized constant SearchController::Verses):
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (228.2ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 14:38:59) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x6a20c3bef5e8>):
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 14:50:12) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x6a20c364bec0>):
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (147.7ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:14:35) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x6a20c364ebe8>):
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (145.1ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:15:04) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x6a20c3b39f90>):
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:16:52) [GET]
+  Parameters: {"q"=>"asdf"}
+Rendering search/index
+Completed in 49ms (View: 45, DB: 0) | 200 OK [http://biblepeople.info/search?q=asdf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:17:03) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x6a20c35bd760>):
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (155.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:18:28) [GET]
+  Parameters: {"q"=>"asdf"}
+  [4;36;1mVerse Load (80.9ms)[0m   [0;1mSELECT * FROM "verses" WHERE (verse like '%asdf%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 98ms (View: 7, DB: 81) | 200 OK [http://biblepeople.info/search?q=asdf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:18:31) [GET]
+  [4;35;1mVerse Load (3.0ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (31.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+Completed in 43ms (View: 1, DB: 34) | 200 OK [http://biblepeople.info/search]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:19:15) [GET]
+  [4;35;1mVerse Load (2.9ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+Completed in 43ms (View: 1, DB: 34) | 200 OK [http://biblepeople.info/search]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:19:40) [GET]
+  [4;35;1mVerse Load (2.8ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:16: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:18: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Search Results</h1>\n\n"
+
+;  form_tag verses_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( text_field_tag :q, params[:q] ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( submit_tag "search", :name => nil %.
+  </p>
+<% end ).to_s); @output_buffer.concat "\n\n"
+
+;  for verse in @verses ; @output_buffer.concat "\n  <h3 style=\"margin-bottom: 2px\">"
+; @output_buffer.concat(( verse.chapter ).to_s); @output_buffer.concat ":"; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</h3>\n  <p>"
+; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( will_paginate @products ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/nfriedly/biblepeople.info/app/views/search/index.html.erb:18:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+/dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:16: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/search/index.html.erb:18: syntax error, unexpected $end, expecting kEND) on line #6 of app/views/search/index.html.erb:
+3: <% form_tag verses_path, :method => 'get' do %>
+4:   <p>
+5:     <%= text_field_tag :q, params[:q] %>
+6:     <%= submit_tag "search", :name => nil %.
+7:   </p>
+8: <% end %>
+9: 
+
+    app/views/search/index.html.erb:18:in `compile!'
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:20:00) [GET]
+  [4;35;1mVerse Load (2.9ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (30.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+
+ActionView::TemplateError (The @search variable appears to be empty. Did you forget to pass the collection object for will_paginate?) on line #15 of app/views/search/index.html.erb:
+12:   <p><%= verse.text %></p>
+13: <% end %>
+14: 
+15: <%= will_paginate @products %>
+
+    /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/view_helpers.rb:94:in `will_paginate'
+    app/views/search/index.html.erb:15
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:20:25) [GET]
+  [4;35;1mVerse Load (2.8ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (29.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+Completed in 51ms (View: 11, DB: 32) | 200 OK [http://biblepeople.info/search]
+
+
+Processing VersesController#index (for 129.137.226.178 at 2010-02-08 15:20:33) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;35;1mVerse Load (6157.8ms)[0m   [0mSELECT * FROM "verses" [0m
+Rendering template within layouts/verses
+Rendering verses/index
+ERROR: compiling _run_erb_app47views47verses47index46html46erb RAISED compile error
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47verses47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Search Results</h1>\n\n"
+
+;  form_tag verses_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( text_field_tag :q, params[:q] ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( submit_tag "search", :name => nil %.
+  </p>
+<% end ).to_s); @output_buffer.concat "\n\n"
+
+;  for verse in @verses ; @output_buffer.concat "\n  <h3 style=\"margin-bottom: 2px\">"
+; @output_buffer.concat(( verse.chapter ).to_s); @output_buffer.concat ":"; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</h3>\n  <p>"
+; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( will_paginate @products ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/nfriedly/biblepeople.info/app/controllers/verses_controller.rb:7:in `index'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+/dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19: syntax error, unexpected $end, expecting kEND) on line #6 of app/views/verses/index.html.erb:
+3: <% form_tag verses_path, :method => 'get' do %>
+4:   <p>
+5:     <%= text_field_tag :q, params[:q] %>
+6:     <%= submit_tag "search", :name => nil %.
+7:   </p>
+8: <% end %>
+9: 
+
+    app/views/verses/index.html.erb:19:in `compile!'
+    app/controllers/verses_controller.rb:7:in `index'
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VersesController#index (for 129.137.226.178 at 2010-02-08 15:21:10) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (5897.6ms)[0m   [0;1mSELECT * FROM "verses" [0m
+Rendering template within layouts/verses
+Rendering verses/index
+ERROR: compiling _run_erb_app47views47verses47index46html46erb RAISED compile error
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47verses47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Search Results</h1>\n\n"
+
+;  form_tag verses_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( text_field_tag :q, params[:q] ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( submit_tag "search", :name => nil %.
+  </p>
+<% end ).to_s); @output_buffer.concat "\n\n"
+
+;  for verse in @verses ; @output_buffer.concat "\n  <h3 style=\"margin-bottom: 2px\">"
+; @output_buffer.concat(( verse.chapter ).to_s); @output_buffer.concat ":"; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</h3>\n  <p>"
+; @output_buffer.concat(( verse.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( will_paginate @products ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/nfriedly/biblepeople.info/app/controllers/verses_controller.rb:7:in `index'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+/dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/dh/passenger/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:6: syntax error, unexpected '.'
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/home/nfriedly/biblepeople.info/app/views/verses/index.html.erb:19: syntax error, unexpected $end, expecting kEND) on line #6 of app/views/verses/index.html.erb:
+3: <% form_tag verses_path, :method => 'get' do %>
+4:   <p>
+5:     <%= text_field_tag :q, params[:q] %>
+6:     <%= submit_tag "search", :name => nil %.
+7:   </p>
+8: <% end %>
+9: 
+
+    app/views/verses/index.html.erb:19:in `compile!'
+    app/controllers/verses_controller.rb:7:in `index'
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (384.9ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:24:36) [GET]
+  [4;35;1mVerse Load (3.3ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (31.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `serch_path' for #<ActionView::Base:0x6a20c1cc6e28>) on line #3 of app/views/search/index.html.erb:
+1: <h1>Search Results</h1>
+2: 
+3: <% form_tag serch_path, :method => 'get' do %>
+4:   <p>
+5:     <%= text_field_tag :q, params[:q] %>
+6:     <%= submit_tag "search", :name => nil %>
+
+    app/views/search/index.html.erb:3
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:24:45) [GET]
+  [4;35;1mVerse Load (3.3ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (32.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `search_path' for #<ActionView::Base:0x6a20c16be850>) on line #3 of app/views/search/index.html.erb:
+1: <h1>Search Results</h1>
+2: 
+3: <% form_tag search_path, :method => 'get' do %>
+4:   <p>
+5:     <%= text_field_tag :q, params[:q] %>
+6:     <%= submit_tag "search", :name => nil %>
+
+    app/views/search/index.html.erb:3
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:16) [GET]
+  [4;35;1mVerse Load (3.0ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (verse like '%%') [0m
+Rendering search/index
+Completed in 77ms (View: 33, DB: 34) | 200 OK [http://biblepeople.info/search]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:21) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;35;1mVerse Load (31.0ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%jesus%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 40ms (View: 2, DB: 31) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:28) [GET]
+  Parameters: {"q"=>"gd"}
+  [4;36;1mVerse Load (31.7ms)[0m   [0;1mSELECT * FROM "verses" WHERE (verse like '%gd%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 54ms (View: 2, DB: 32) | 200 OK [http://biblepeople.info/search?q=gd]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:30) [GET]
+  Parameters: {"q"=>"God"}
+  [4;35;1mVerse Load (32.0ms)[0m   [0mSELECT * FROM "verses" WHERE (verse like '%God%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 41ms (View: 2, DB: 32) | 200 OK [http://biblepeople.info/search?q=God]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:50) [GET]
+  Parameters: {"q"=>"God"}
+  [4;36;1mVerse Load (3.3ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%God%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (57.3ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%God%') [0m
+Rendering search/index
+Completed in 79ms (View: 8, DB: 61) | 200 OK [http://biblepeople.info/search?q=God]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:25:55) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (42.8ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (52.5ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+Completed in 113ms (View: 7, DB: 95) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:26:29) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (52.2ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (57.7ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+Completed in 137ms (View: 17, DB: 110) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:26:49) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (45.8ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (53.8ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: books.verse_id: SELECT * FROM "books" WHERE ("books".verse_id = 23146) LIMIT 1[0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such column: books.verse_id: SELECT * FROM "books" WHERE ("books".verse_id = 23146)  LIMIT 1) on line #11 of app/views/search/index.html.erb:
+8: <% end %>
+9: 
+10: <% for v in @verses %>
+11:   <h3 style="margin-bottom: 2px"><%= v.book %> <%= v.chapter %>:<%= v.verse %></h3>
+12:   <p><%= v.text %></p>
+13: <% end %>
+14: 
+
+    app/views/search/index.html.erb:11
+    app/views/search/index.html.erb:10:in `each'
+    app/views/search/index.html.erb:10
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (163.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:28:28) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (44.2ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (44.6ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+Completed in 146ms (View: 44, DB: 89) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:33:30) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;36;1mVerse Load (36.0ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (42.6ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Book id: 40, book: "Matthew">) on line #11 of app/views/search/index.html.erb:
+8: <% end %>
+9: 
+10: <% for v in @verses %>
+11:   <h3 style="margin-bottom: 2px"><%= v.book.name %> <%= v.chapter %>:<%= v.verse %></h3>
+12:   <p><%= v.text %></p>
+13: <% end %>
+14: 
+
+    app/views/search/index.html.erb:11
+    app/views/search/index.html.erb:10:in `each'
+    app/views/search/index.html.erb:10
+    /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (151.9ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:33:42) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;35;1mVerse Load (36.7ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (71.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+Completed in 140ms (View: 23, DB: 108) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:33:54) [GET]
+  Parameters: {"page"=>"2", "q"=>"jesus"}
+  [4;35;1mVerse Load (35.0ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 20[0m
+  [4;36;1mSQL (81.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+Completed in 147ms (View: 22, DB: 116) | 200 OK [http://biblepeople.info/search?page=2&q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:34:00) [GET]
+  Parameters: {"page"=>"3", "q"=>"jesus"}
+  [4;35;1mVerse Load (37.9ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 40[0m
+  [4;36;1mSQL (91.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+Completed in 159ms (View: 21, DB: 130) | 200 OK [http://biblepeople.info/search?page=3&q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:34:04) [GET]
+  Parameters: {"page"=>"48", "q"=>"jesus"}
+  [4;35;1mVerse Load (43.8ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 940[0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 66) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 66) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 66) [0m
+Completed in 314ms (View: 264, DB: 44) | 200 OK [http://biblepeople.info/search?page=48&q=jesus]

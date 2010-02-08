@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+
+<% form_tag '/search', :method => 'get' do %>
+  <p>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "search", :name => nil %>
+  </p>
+<% end %>
+
+<% for v in @verses %>
+  <h3 style="margin-bottom: 2px"><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></h3>
+  <p><%= v.text %></p>
+<% end %>
+
+<%= will_paginate @verses %>
