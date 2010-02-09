@@ -1457,3 +1457,766 @@ Rendering search/index
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 66) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 66) [0m
 Completed in 314ms (View: 264, DB: 44) | 200 OK [http://biblepeople.info/search?page=48&q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:35:04) [GET]
+  Parameters: {"q"=>"jesus"}
+  [4;35;1mVerse Load (37.0ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%jesus%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (66.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%jesus%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+Completed in 176ms (View: 47, DB: 104) | 200 OK [http://biblepeople.info/search?q=jesus]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:36:52) [GET]
+  [4;35;1mVerse Load (2.9ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (69.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 102ms (View: 21, DB: 73) | 200 OK [http://biblepeople.info/search]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:36:58) [GET]
+  Parameters: {"q"=>"Genesis 1:1"}
+  [4;35;1mVerse Load (67.6ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%Genesis 1:1%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 74ms (View: 1, DB: 68) | 200 OK [http://biblepeople.info/search?q=Genesis+1%3A1]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:37:04) [GET]
+  Parameters: {"q"=>""}
+  [4;36;1mVerse Load (2.7ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 86ms (View: 20, DB: 59) | 200 OK [http://biblepeople.info/search?q=]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:38:17) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;36;1mVerse Load (47.4ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%in god%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in god%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 9) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 16) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 18) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 41) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 42) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 43) [0m
+Completed in 223ms (View: 114, DB: 101) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:59:04) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;36;1mVerse Load (131.4ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%''in god''%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 192ms (View: 51, DB: 131) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 15:59:16) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (107.4ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in god%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in god%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 9) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 16) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 18) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 19) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 41) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 42) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 43) [0m
+Completed in 230ms (View: 19, DB: 203) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:06:48) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (3.1ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in%god%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (107.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in%god%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 194ms (View: 74, DB: 111) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:06:53) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;35;1mVerse Load (3.1ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%in%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (75.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%in%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 190ms (View: 102, DB: 79) | 200 OK [http://biblepeople.info/search?q=god+in]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:06:58) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (3.3ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in%god%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (63.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in%god%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 95ms (View: 20, DB: 67) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:26:10) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;36;1mVerse Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "%": syntax error: SELECT * FROM "verses" WHERE (text like %'in','god'%) LIMIT 20 OFFSET 0[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "%": syntax error: SELECT * FROM "verses" WHERE (text like %'in','god'%)  LIMIT 20 OFFSET 0):
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `send'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `paginate'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/collection.rb:87:in `create'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:76:in `paginate'
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (43.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:28:12) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (0.0ms)[0m   [0mSQLite3::SQLException: near ",": syntax error: SELECT * FROM "verses" WHERE (text like '%in%','%god%') LIMIT 20 OFFSET 0[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ",": syntax error: SELECT * FROM "verses" WHERE (text like '%in%','%god%')  LIMIT 20 OFFSET 0):
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `send'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `paginate'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/collection.rb:87:in `create'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:76:in `paginate'
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (161.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:34:15) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;36;1mVerse Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "in": syntax error: SELECT * FROM "verses" WHERE (in) LIMIT 20 OFFSET 0[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "in": syntax error: SELECT * FROM "verses" WHERE (in)  LIMIT 20 OFFSET 0):
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `send'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `paginate'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/collection.rb:87:in `create'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:76:in `paginate'
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (102.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:42:26) [GET]
+  Parameters: {"q"=>"in god"}
+
+NoMethodError (undefined method `search' for "in god":String):
+  app/models/verse.rb:5:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (98.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:45:14) [GET]
+  Parameters: {"q"=>"in god"}
+
+NoMethodError (undefined method `search' for "in god":String):
+  app/models/verse.rb:6:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:46:43) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (0.0ms)[0m   [0mSQLite3::SQLException: near "%": syntax error: SELECT * FROM "verses" WHERE (text like %in% OR text like %god%) LIMIT 20 OFFSET 0[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "%": syntax error: SELECT * FROM "verses" WHERE (text like %in% OR text like %god%)  LIMIT 20 OFFSET 0):
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `send'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `paginate'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/collection.rb:87:in `create'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:76:in `paginate'
+  app/models/verse.rb:8:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:47:17) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;36;1mVerse Load (3.9ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%in%' OR text like '%god%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (119.8ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in%' OR text like '%god%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.4ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 326ms (View: 194, DB: 124) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:47:22) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;36;1mVerse Load (2.9ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%god%' OR text like '%in%') LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (69.7ms)[0m   [0mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' OR text like '%in%') [0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 101ms (View: 20, DB: 73) | 200 OK [http://biblepeople.info/search?q=god+in]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:48:29) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;36;1mVerse Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "god": syntax error: SELECT * FROM "verses" WHERE (text like '%'god'%' OR text like '%'in'%') LIMIT 20 OFFSET 0[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "god": syntax error: SELECT * FROM "verses" WHERE (text like '%'god'%' OR text like '%'in'%')  LIMIT 20 OFFSET 0):
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `send'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:82:in `paginate'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/collection.rb:87:in `create'
+  /home/nfriedly/.gem/ruby/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:76:in `paginate'
+  app/models/verse.rb:9:in `search'
+  app/controllers/search_controller.rb:4:in `index'
+  /dh/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /dh/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /dh/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /dh/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /dh/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (64.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:49:34) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;35;1mVerse Load (3.0ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%' OR text like '%in%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' OR text like '%in%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 209ms (View: 27, DB: 81) | 200 OK [http://biblepeople.info/search?q=god+in]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:49:42) [GET]
+  Parameters: {"q"=>"god in /asdf"}
+  [4;35;1mVerse Load (2.9ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%' OR text like '%in%' OR text like '%/asdf%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (94.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' OR text like '%in%' OR text like '%/asdf%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 126ms (View: 20, DB: 98) | 200 OK [http://biblepeople.info/search?q=god+in+%2Fasdf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:49:45) [GET]
+  Parameters: {"q"=>"god in /asdf"}
+  [4;35;1mVerse Load (2.9ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%' OR text like '%in%' OR text like '%/asdf%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (75.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' OR text like '%in%' OR text like '%/asdf%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 107ms (View: 20, DB: 78) | 200 OK [http://biblepeople.info/search?q=god+in+%2Fasdf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:49:53) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;35;1mVerse Load (3.1ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%' OR text like '%in%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (78.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' OR text like '%in%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 110ms (View: 20, DB: 82) | 200 OK [http://biblepeople.info/search?q=god+in]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:51:35) [GET]
+  Parameters: {"q"=>"god in"}
+  [4;35;1mVerse Load (2.8ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%god%' AND text like '%in%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (48.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%god%' AND text like '%in%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 165ms (View: 105, DB: 52) | 200 OK [http://biblepeople.info/search?q=god+in]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:51:40) [GET]
+  Parameters: {"q"=>"in god"}
+  [4;35;1mVerse Load (3.3ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in%' AND text like '%god%') LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (123.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "verses" WHERE (text like '%in%' AND text like '%god%') [0m
+Rendering search/index
+  [4;35;1mBook Load (0.3ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+Completed in 158ms (View: 20, DB: 127) | 200 OK [http://biblepeople.info/search?q=in+god]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:51:43) [GET]
+  Parameters: {"q"=>"in god /adf"}
+  [4;35;1mVerse Load (66.7ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in%' AND text like '%god%' AND text like '%/adf%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 74ms (View: 1, DB: 67) | 200 OK [http://biblepeople.info/search?q=in+god+%2Fadf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:51:47) [GET]
+  Parameters: {"q"=>"in god \\adf"}
+  [4;36;1mVerse Load (72.2ms)[0m   [0;1mSELECT * FROM "verses" WHERE (text like '%in%' AND text like '%god%' AND text like '%\adf%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+Completed in 79ms (View: 1, DB: 72) | 200 OK [http://biblepeople.info/search?q=in+god+%5Cadf]
+
+
+Processing SearchController#index (for 129.137.226.178 at 2010-02-08 16:52:14) [GET]
+  Parameters: {"q"=>"in god's"}
+  [4;35;1mVerse Load (102.2ms)[0m   [0mSELECT * FROM "verses" WHERE (text like '%in%' AND text like '%god''s%') LIMIT 20 OFFSET 0[0m
+Rendering search/index
+  [4;36;1mBook Load (0.3ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 1) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 4) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 5) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 14) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 16) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 18) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 40) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 41) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 42) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 42) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 45) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 45) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 45) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 46) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 46) [0m
+  [4;36;1mBook Load (0.2ms)[0m   [0;1mSELECT * FROM "books" WHERE ("books"."id" = 56) [0m
+  [4;35;1mBook Load (0.2ms)[0m   [0mSELECT * FROM "books" WHERE ("books"."id" = 60) [0m
+Completed in 129ms (View: 17, DB: 105) | 200 OK [http://biblepeople.info/search?q=in+god%27s]
