@@ -63,6 +63,7 @@ class Refference
   end
 
   def pretty 
+    return "" unless isValid
     str = nil
     if(@type == "verse")
       str = @book.book
@@ -76,6 +77,7 @@ class Refference
   end
 
   def sql
+    return "1=1" unless isValid
     str = ""
     if(@type == "verse")
       str = "book_id = " + @book.id.to_s
