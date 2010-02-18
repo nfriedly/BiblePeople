@@ -1,7 +1,10 @@
 class SearchController < ApplicationController
 
   def index
-    @verses = Verse.search(params[:q], params[:page])
+    @verses = Search.search(params[:q], params[:page])
+    @terms = Search.terms
+    @refference = Search.refference
+    render :layout => 'main'
   end
 
 end

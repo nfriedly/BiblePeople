@@ -1,4 +1,4 @@
-<h1>Search Results</h1>
+<h2>Search Results</h2>
 
 <% form_tag '/search', :method => 'get' do %>
   <p>
@@ -16,8 +16,8 @@
 <% end %>
 
 <% for v in @verses %>
-  <h3 style="margin-bottom: 2px"><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></h3>
-  <p><%= v.text %></p>
+  <h3 style="margin-bottom: 2px" class="refference" ><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></h3>
+  <p class="verse"><span><%= v.text.split(' ').join('</span> <span>') %></span></p>
 <% end %>
 
 <%= will_paginate @verses %>
