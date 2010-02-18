@@ -7,6 +7,14 @@
   </p>
 <% end %>
 
+<% if(@refference) %>
+<p>Search for <b><%= @terms.join " " %></b> in <b><%= @refference.pretty %></b>
+<% end %>
+
+<% if(@verses.length == 0) %>
+<p>Sorry, no results were found</p>
+<% end %>
+
 <% for v in @verses %>
   <h3 style="margin-bottom: 2px"><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></h3>
   <p><%= v.text %></p>
