@@ -2,7 +2,8 @@
 
 <table>
   <tr>
-    <th>Name(s)</th>
+    <th>Name</th>
+    <th>Gender</th>
     <th>Father</th>
     <th>Mother</th>
     <th>Description</th>
@@ -11,6 +12,7 @@
 <% @people.each do |person| %>
   <tr>
     <td><%=h person.name %></td> 
+    <td><%=h person.gender %></td>
     <td><%=h person.father_id %></td>
     <td><%=h person.mother_id %></td>
     <td><%=h person.description %></td>

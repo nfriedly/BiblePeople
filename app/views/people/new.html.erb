@@ -9,6 +9,15 @@
   </p>
   
   <p>
+     <label>Gender</label> <br />
+     <select name="person[gender]" >
+        <option value=""></option>
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+    </select>
+  </p>
+  
+  <p>
     <%= f.label :father_id %><br />
     <input id="father_name" name="father_name" size="30" type="text" />
     <%= f.hidden_field :father_id %>

@@ -1,5 +1,4 @@
 class PeopleController < ApplicationController
-
   # GET /people
   # GET /people.xml
   def index
@@ -94,6 +93,11 @@ class PeopleController < ApplicationController
   end
   
   def parent
+    @people = Person.suggestParent(params[:child], params[:which], params[:name])
     
+    respond_to do |format|
+      format.json { render :json => @people }
+      format.xml  { render :xml => @people }
+    end
   end
 end

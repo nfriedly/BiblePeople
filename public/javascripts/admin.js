@@ -27,4 +27,7 @@ $(document).ready(function(){
     // update the links
     CPLink.attr('href', '/people/new?name=' + Word.text().replace(/[^a-z ]/i,''));
  });
+ 
+ // autocomplete for the parents
+ //$('#father_name, #mother_name).autocomplete();
 });
