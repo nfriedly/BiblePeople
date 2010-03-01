@@ -25,6 +25,8 @@ class PeopleController < ApplicationController
   # GET /people/new.xml
   def new
     @person = Person.new
+    #create names
+    #params[:name].each {|name| @name = Name.new(name, person) }
 
     respond_to do |format|
       format.html { render :layout => "main" } # new.html.erb
