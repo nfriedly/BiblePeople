@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :names
+
   map.resources :people
 
   map.resources :verses

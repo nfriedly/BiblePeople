@@ -1,9 +1,10 @@
 class PeopleController < ApplicationController
+
   # GET /people
   # GET /people.xml
   def index
     @people = Person.all
-
+    
     respond_to do |format|
       format.html { render :layout => "main" } # index.html.erb
       format.xml  { render :xml => @people }
@@ -25,9 +26,8 @@ class PeopleController < ApplicationController
   # GET /people/new.xml
   def new
     @person = Person.new
-    #create names
-    #params[:name].each {|name| @name = Name.new(name, person) }
-
+    @person.names.new
+    
     respond_to do |format|
       format.html { render :layout => "main" } # new.html.erb
       format.xml  { render :xml => @person }
@@ -43,6 +43,14 @@ class PeopleController < ApplicationController
   # POST /people.xml
   def create
     @person = Person.new(params[:person])
+    
+    #save name(s)
+    #params[:name].each {|name| 
+    #  @name = Name.new
+    #  @name.name = name
+    #  @name.person_id = @person.id
+    #  @name.save
+    #}
 
     respond_to do |format|
       if @person.save
@@ -83,5 +91,9 @@ class PeopleController < ApplicationController
       format.html { redirect_to(people_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def parent
+    
   end
 end

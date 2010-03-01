@@ -1,0 +1,22 @@
+<h1>Listing names</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Person</th>
+  </tr>
+
+<% @names.each do |name| %>
+  <tr>
+    <td><%=h name.name %></td>
+    <td><%=h name.person_id %></td>
+    <td><%= link_to 'Show', name %></td>
+    <td><%= link_to 'Edit', edit_name_path(name) %></td>
+    <td><%= link_to 'Destroy', name, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New name', new_name_path %>
