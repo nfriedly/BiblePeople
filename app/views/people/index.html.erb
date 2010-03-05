@@ -3,18 +3,19 @@
 <table>
   <tr>
     <th align="left">Name</th>
-    <th>Gender</th>
-    <th>Father</th>
-    <th>Mother</th>
+    <th align="left">Gender</th>
+    <th align="left">Father</th>
+    <th align="left">Mother</th>
+    <!-- th align="left">Family Tree</th -->
   </tr>
 
 <% @people.each do |person| %>
   <tr>
-    <td><%=h person.name %></td> 
+    <td><%= link_to(person.name, person) %></td> 
     <td><%=h person.genderName %></td>
-    <td><%=h person.fatherName %></td>
-    <td><%=h person.motherName %></td>
-    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to (person.fatherName, person.father) unless !person.father %></td>
+    <td><%= link_to (person.motherName, person.mother) unless !person.mother %></td>
+    <!-- td><  %= link_to "Family Tree", {:controller => "families", :action => "show", :id => person.id }  %  ></td -->
     <% if authorized? %>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -28,7 +28,7 @@ $(document).ready(function(){
         WordActions.offset(offset);
 
         // update the links
-        CPLink.attr('href', '/people/new?name=' + Word.text().replace(/[^a-z ]/i,''));
+        CPLink.attr('href', '/people/new?name=' + Word.text().replace(/[^a-z ]/ig,''));
      });
    
    }
@@ -47,5 +47,13 @@ $(document).ready(function(){
   }).result(function(event, data, formatted) {
     $("#person_"+this.id.split("_")[0]+"_id").val(data[1]);
  });
+ 
+ // add name, only runs on new person pages
+ $('#names a.add').click(function(){
+      $("#names p:first").clone().insertAfter("#names p:last");
+      $("#names p:last input").val("");
+      return false;
+  });
+  
 
 });

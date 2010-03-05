@@ -1,7 +1,4 @@
-<p>
-  <b>Name:</b>
-  <%= link_to @person.name, @person %>
-</p>
+<h1><%= link_to @person.name, @person %></h1>
 
 <p>
   <b>Father:</b>
@@ -44,5 +41,4 @@
 </p>
 
 
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %>
+<%= link_to 'Edit', edit_person_path(@person) if authorized? %> 

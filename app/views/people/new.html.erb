@@ -3,10 +3,13 @@
 <% form_for(@person) do |f| %>
   <%= f.error_messages %>
 
+<div id="names">
   <p>
      <label>Name</label> <br />
      <input type="text" size="30" id="person_name" name="person[name_attributes][]" value="<%= params[:name] || "" %>" />
   </p>
+  <a href="#" class="add">Add</a>
+</div>
   
   <p>
      <label>Gender</label> <br />
