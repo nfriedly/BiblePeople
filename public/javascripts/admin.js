@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
  // create my word-actions div
- $('<div id="word-actions" class="hoverbox"><a href="#" id="create-person">Create Person</a></div>')
+ $('<div id="word-actions" class="hoverbox"><a href="/people/new" id="create-person">Create Person</a></div>')
     .appendTo('body');
  var WordActions = $('#word-actions');
  var CPLink = $('#create-person');
@@ -29,5 +29,18 @@ $(document).ready(function(){
  });
  
  // autocomplete for the parents
- //$('#father_name, #mother_name).autocomplete();
+ $('#father_name, #mother_name').autocomplete(
+    "/people/parent", // .json or .xml also work
+    {
+      extraParams:  {
+        child: function(){ return $('#person_name').val(); }, 
+        which: function(){ return document.activeElement.id.split("_")[0]; }
+      },
+      formatItem: function(row){
+        return row[0];
+      }
+  }).result(function(event, data, formatted) {
+    $("#person_"+this.id.split("_")[0]+"_id").val(data[1]);
+ });
+
 });

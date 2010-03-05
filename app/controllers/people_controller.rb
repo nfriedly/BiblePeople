@@ -1,4 +1,6 @@
 class PeopleController < ApplicationController
+    before_filter :login_required, :except  => [:index, :show]
+  
   # GET /people
   # GET /people.xml
   def index
@@ -14,6 +16,7 @@ class PeopleController < ApplicationController
   # GET /people/1.xml
   def show
     @person = Person.find(params[:id])
+    @siblings = Person.findSiblings(@person)
 
     respond_to do |format|
       format.html { render :layout => "main" } # show.html.erb
@@ -36,6 +39,7 @@ class PeopleController < ApplicationController
   # GET /people/1/edit
   def edit
     @person = Person.find(params[:id])
+    render :layout => "main"
   end
 
   # POST /people
@@ -92,10 +96,18 @@ class PeopleController < ApplicationController
     end
   end
   
+  # GET /people/parent
+  # GET /people/parent.json
+  # GET /people/parent.xml
   def parent
-    @people = Person.suggestParent(params[:child], params[:which], params[:name])
+    if(params[:q] && !params[:name])
+      params[:name] = params[:q]
+    end
+
+    @people = Name.suggestParent(params[:child], params[:which], params[:name])
     
     respond_to do |format|
+      format.html { render :inline => "<% @people.each do |p| %><%= p.name %>|<%= p.person_id %>\n<% end %>"  } 
       format.json { render :json => @people }
       format.xml  { render :xml => @people }
     end

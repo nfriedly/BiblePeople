@@ -3,32 +3,49 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>People and Famlies of the Bible</title>
+    <title><%= (@person) ? @person.name + " - " : "" %> People and Famlies of the Bible</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/biblepeople.css"  />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/jquery.autocomplete.css" /> 
+
+
  </head>
   <body>
     <div id="page">
 
       <div id="content">
         <div id="header">
-          <h1>Bible People</h1>
+          <h1><a href="/">Bible People</a></h1>
           <h2>People and Famlies of the Bible</h2>
         </div>
 
+<% if flash[:notice] %>
+  <p style="color: green"><%= flash[:notice] %></p>
+<% end %>
 
-<p style="color: green"><%= flash[:notice] %></p>
+<% if flash[:error] %>
+  <p style="color: red"><%= flash[:error] %></p>
+<% end %>
 
 <%= yield %>
 
 
      </div>
       
-      <div id="footer">&nbsp;</div>
+      <div id="footer">
+        <% if authorized? %>
+          <%= link_to "People", people_path %>
+          <%= link_to "Names", names_path %>
+          <%= link_to "Logout", { :controller => "sessions", :action => "destroy" }, :method => :delete %>
+        <% end %>
+      </div>
     </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
-<script src="/javascripts/admin.js"></script>
+<% if authorized? %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type='text/javascript' src='/javascripts/jquery.ajaxQueue.js'></script> 
+  <script type='text/javascript' src='/javascripts/jquery.autocomplete.min.js'></script> 
+  <script src="/javascripts/admin.js"></script>
+<% end %>
 
   </body>
 </html>

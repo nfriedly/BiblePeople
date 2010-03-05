@@ -1,11 +1,13 @@
 class NamesController < ApplicationController
+  before_filter :login_required
+  
   # GET /names
   # GET /names.xml
   def index
     @names = Name.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render :layout => "main" } # index.html.erb
       format.xml  { render :xml => @names }
     end
   end
@@ -16,7 +18,7 @@ class NamesController < ApplicationController
     @name = Name.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "main" }# show.html.erb
       format.xml  { render :xml => @name }
     end
   end
@@ -27,7 +29,7 @@ class NamesController < ApplicationController
     @name = Name.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => "main" }# new.html.erb
       format.xml  { render :xml => @name }
     end
   end
@@ -35,6 +37,7 @@ class NamesController < ApplicationController
   # GET /names/1/edit
   def edit
     @name = Name.find(params[:id])
+    render :layout => "main"
   end
 
   # POST /names
@@ -48,7 +51,7 @@ class NamesController < ApplicationController
         format.html { redirect_to(@name) }
         format.xml  { render :xml => @name, :status => :created, :location => @name }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout => "main" }
         format.xml  { render :xml => @name.errors, :status => :unprocessable_entity }
       end
     end
@@ -65,7 +68,7 @@ class NamesController < ApplicationController
         format.html { redirect_to(@name) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit", :layout => "main" }
         format.xml  { render :xml => @name.errors, :status => :unprocessable_entity }
       end
     end

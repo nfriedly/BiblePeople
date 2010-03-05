@@ -2,14 +2,34 @@
 
 <% form_for(@person) do |f| %>
   <%= f.error_messages %>
+  
+  <% @person.names.each do |name| %>
+    <% fields_for "person[name][]", name do |fields| %>
+      <p>
+         <label>Name</label> <br />
+         <%= fields.text_field :name %>
+      </p>
+    <% end %>
+  <% end %>
+
+  <p>
+     <label>Gender</label> <br />
+     <select name="person[gender]" >
+        <option value="" ></option>
+        <option value="m" <%= (@person.gender == "m") ? 'selected="selected"' : '' %>>Male</option>
+        <option value="f"  <%= (@person.gender == "f" ) ? 'selected="selected"' : '' %>>Female</option>
+    </select>
+  </p>
 
   <p>
     <%= f.label :father_id %><br />
-    <%= f.text_field :father_id %>
+    <input id="father_name" name="father_name" size="30" type="text" value="<%= @person.fatherName %>" />
+    <%= f.hidden_field :father_id %>
   </p>
   <p>
     <%= f.label :mother_id %><br />
-    <%= f.text_field :mother_id %>
+    <input id="mother_name" name="mother_name" size="30" type="text" value="<%= @person.motherName %>"  />
+    <%= f.hidden_field :mother_id %>
   </p>
   <p>
     <%= f.label :description %><br />

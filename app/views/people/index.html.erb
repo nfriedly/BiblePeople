@@ -6,16 +6,14 @@
     <th>Gender</th>
     <th>Father</th>
     <th>Mother</th>
-    <th>Description</th>
   </tr>
 
 <% @people.each do |person| %>
   <tr>
     <td><%=h person.name %></td> 
-    <td><%=h person.gender %></td>
-    <td><%=h person.father_id %></td>
-    <td><%=h person.mother_id %></td>
-    <td><%=h person.description %></td>
+    <td><%=h person.genderName %></td>
+    <td><%=h person.fatherName %></td>
+    <td><%=h person.motherName %></td>
     <td><%= link_to 'Show', person %></td>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>

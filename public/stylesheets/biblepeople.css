@@ -18,6 +18,54 @@
   z-index:3;
 }
 
+/* family tree styles */
+
+.family {
+  float: left;
+}
+
+.family.multiple-children {
+  border-top: 1px solid grey;
+}
+
+.children {
+  border-top: 1px solid grey;
+  margin-left: 1em;
+  clear:left;
+}
+
+/*.children > .family:last-child{
+  width:1px;
+  overflow:visible;
+}*/
+
+.family > a {
+  margin-right: 1em ;
+}
+
+.family:last-child > a {
+  margin-right: 0 ;
+}
+
+.linedown {
+  margin-left: 1em;
+  border-left: 1px solid grey;
+  /*float:left;*/
+}
+
+.lineup {
+  positon: relative;
+  margin-left: 1em;
+  border-left: 1px solid grey;
+}
+
+
+/* helper styles */
+
+.clear {
+  clear:both;
+}
+
 
 /* sitewide styles */
 

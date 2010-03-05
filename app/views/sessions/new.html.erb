@@ -1,0 +1,20 @@
+<h1>Login</h1>
+
+<% form_tag :action => 'create' do %>
+  
+  <p>
+    <label for="user_email">Email</label><br />
+    <input id="user_email" name="email" size="30" type="text" />
+  </p>
+  
+  <p>
+    <label for="user_password">Password</label><br />
+    <input id="user_password" name="password" size="30" type="password" />
+
+  <p>
+    <input id="user_submit" name="commit" type="submit" value="Login" />
+  </p>
+
+</form>
+
+<% end %>

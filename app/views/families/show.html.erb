@@ -1,0 +1,12 @@
+<h1>Family tree of <%= link_to @parent.name, @parent %></h1>
+
+<%= render( :partial => "family", 
+        :locals => { 
+          :parent => @parent, 
+          :lineup => false,
+          :depth => 0, 
+          :max_depth => @max_depth 
+        }
+ ) %>
+  
+

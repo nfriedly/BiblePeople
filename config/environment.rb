@@ -13,7 +13,7 @@ Rails::Initializer.run do |config|
 
   #added by nathan http://wiki.github.com/mislav/will_paginate/installation
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
-
+  config.gem 'simplest_auth'
 
 
   # Settings in config/environments/* take precedence over those specified here.

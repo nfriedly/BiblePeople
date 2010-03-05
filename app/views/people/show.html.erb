@@ -1,16 +1,36 @@
 <p>
   <b>Name:</b>
-  <%=h @person.name %>
+  <%= link_to @person.name, @person %>
 </p>
 
 <p>
   <b>Father:</b>
-  <%=h @person.father_id %>
+  <%= link_to (@person.fatherName, @person.father) unless !@person.father %>
 </p>
 
 <p>
   <b>Mother:</b>
-  <%=h @person.mother_id %>
+  <%= link_to (@person.motherName, @person.mother) unless !@person.mother %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @person.genderName %>
+</p>
+
+
+<p>
+  <b>Siblings:</b>
+  <% for s in @siblings %>
+    <%= link_to (s.name, s) %>
+  <% end %>
+</p>
+
+<p>
+  <b>Children:</b>
+  <% for c in @person.children %>
+    <%= link_to (c.name, c) %>,
+  <% end %>
 </p>
 
 <p>
