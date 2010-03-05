@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <th align="left">Name</th>
     <th>Gender</th>
     <th>Father</th>
     <th>Mother</th>
@@ -15,12 +15,14 @@
     <td><%=h person.fatherName %></td>
     <td><%=h person.motherName %></td>
     <td><%= link_to 'Show', person %></td>
+    <% if authorized? %>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New person', new_person_path %>
+<%= link_to('New person', new_person_path) if authorized? %>
