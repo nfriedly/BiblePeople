@@ -34,6 +34,11 @@
 </p>
 
 <p>
+  <b>Family Tree:</b>
+  <%= link_to "Family tree of " + @person.name, {:controller => "families", :action => "show", :id => @person.id }  %>
+</p>
+
+<p>
   <b>Description:</b>
   <%=h @person.description %>
 </p>

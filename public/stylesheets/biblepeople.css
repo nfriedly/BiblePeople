@@ -20,6 +20,27 @@
 
 /* family tree styles */
 
+.parents {
+  margin-left:0.5em;
+  border: 1px solid grey;
+  border-top:0;
+  float:left;
+}
+
+.parents a {
+  position:relative;
+  top: -0.5em;
+  background-color:white;
+}
+
+.parents a:first-child {
+  left: -1em;
+}
+
+.parents a:last-child {
+  right: -1em;
+}
+
 .family {
   float: left;
 }

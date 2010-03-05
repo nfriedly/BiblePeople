@@ -1,5 +1,19 @@
 <h1>Family tree of <%= link_to @parent.name, @parent %></h1>
 
+<% if(@parent.mother && @parent.father) %>
+  <div class="parents">
+    <%= link_to @parent.father.name, @parent.father %>
+    <%= link_to @parent.mother.name, @parent.mother %>
+  </div>
+  <div class="clear"></div>
+  <div class="linedown">&nbsp;</div>
+<% else if(@parent.mother || @parent.father) %>
+  <%= link_to @parent.father.name, @parent.father unless !@parent.father %>
+  <%= link_to @parent.mother.name, @parent.mother unless ! @parent.mother%>
+  <div class="linedown">&nbsp;</div>
+<% end end %>
+
+
 <%= render( :partial => "family", 
         :locals => { 
           :parent => @parent, 
