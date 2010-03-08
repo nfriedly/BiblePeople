@@ -17,7 +17,7 @@
 
 <% for v in @verses %>
   <h3 style="margin-bottom: 2px" class="refference" ><%= v.refference %></h3>
-  <p class="verse"><%=v.linkedText authorized? %></p>
+  <p class="verse"><%=v.linkedText authorized?, params[:q] %></p>
 <% end %>
 
 <%= will_paginate @verses %>

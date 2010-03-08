@@ -36,7 +36,7 @@ class Verse < ActiveRecord::Base
     return text if ( !span && !highlight && person_verses.length == 0 ) 
     
     if ! highlight.is_a? Array
-      highlight = [highlight]
+      highlight = highlight.split(' ')
     end
 
     #otherwise, we've got some work to do. first make an array to hold all of our results
