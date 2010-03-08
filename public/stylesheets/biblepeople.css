@@ -87,8 +87,26 @@
   clear:both;
 }
 
+.highlight {
+  background-color: yellow;
+}
+
 
 /* sitewide styles */
+
+
+a.person {
+  text-decoration:none;
+  border-bottom: 1px solid grey;
+}
+
+a.person.Male {
+  border-color: navy;
+}
+
+a.person.Female {
+  border-color: pink;
+}
 
       body {
         margin: 0;

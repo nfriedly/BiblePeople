@@ -1,0 +1,20 @@
+<h1>Editing person_verse</h1>
+
+<% form_for(@person_verse) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :person_id %><br />
+    <%= f.text_field :person_id %>
+  </p>
+  <p>
+    <%= f.label :verse_id %><br />
+    <%= f.text_field :verse_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @person_verse %> |
+<%= link_to 'Back', person_verses_path %>

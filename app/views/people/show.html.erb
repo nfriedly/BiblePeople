@@ -1,44 +1,79 @@
 <h1><%= link_to @person.name, @person %></h1>
 
+<% if @person.gender %>
 <p>
-  <b>Father:</b>
-  <%= link_to (@person.fatherName, @person.father) unless !@person.father %>
-</p>
-
-<p>
-  <b>Mother:</b>
-  <%= link_to (@person.motherName, @person.mother) unless !@person.mother %>
-</p>
-
-<p>
-  <b>Gender:</b>
   <%= @person.genderName %>
 </p>
+<% end %>
 
 
+<% if @person.description %>
 <p>
-  <b>Siblings:</b>
-  <% for s in @siblings %>
-    <%= link_to (s.name, s) %>
-  <% end %>
-</p>
-
-<p>
-  <b>Children:</b>
-  <% for c in @person.children %>
-    <%= link_to (c.name, c) %>,
-  <% end %>
-</p>
-
-<p>
-  <b>Family Tree:</b>
-  <%= link_to "Family tree of " + @person.name, {:controller => "families", :action => "show", :id => @person.id }  %>
-</p>
-
-<p>
-  <b>Description:</b>
   <%=h @person.description %>
 </p>
+<% end %>
 
+<h2>Family Tree of <%= @person.name %></h2>
+
+<% if(@person.mother && @person.father) %>
+  <div class="parents">
+    <%= link_to @person.father.name, @person.father %>
+    <%= link_to @person.mother.name, @person.mother %>
+  </div>
+  <div class="clear"></div>
+  <div class="linedown">&nbsp;</div>
+<% else if(@person.mother || @person.father) %>
+  <%= link_to @person.father.name, @person.father unless !@person.father %>
+  <%= link_to @person.mother.name, @person.mother unless ! @person.mother%>
+  <div class="linedown">&nbsp;</div>
+<% end end %>
+
+<% if(@person.siblings.length > 0) %>
+  <div class="children">
+<% end %>
+
+<%= render( :partial => "family", 
+        :locals => { 
+          :person => @person, 
+          :lineup => (@person.siblings.length > 0) ,
+          :depth => 0, 
+          :max_depth => @max_depth
+        }
+ ) %>
+  
+<% if(@person.siblings.length > 0) %>
+  <% @person.siblings.each do |sibling| %>
+    <div class="family depth-0">
+      <div class="lineup">&nbsp;</div>
+      <%= link_to sibling.name, sibling %>
+    </div>
+  <% end %>
+  </div>
+<% end %>
+
+<div class="clear"></div>
+
+<p>&nbsp;</p>
+
+<p><a href="?family_tree_depth=10">Show more of the family tree</a></p>
+
+<% #todo: paginate this, preferably by book 
+%>
+
+<%= (@person.verses.length) ? "<h2>Verses where " + @person.name + " is mentioned</h2>" : '' %>
+<% 
+counter = 0
+show_verses = params[:show_verses] || 10
+show_verses = show_verses.to_i
+@person.verses.each do |v| 
+  counter = counter.next
+  break if(counter > show_verses)
+%>
+  <p class="verse"><b><%= v.refference %></b> <%= v.linkedText authorized? %></p>
+<% end %>
+
+<%= (@person.verses.length > counter) ?  '<p><a href="?show_verses=60">Show more refferences to ' + @person.name + '</a></p>' : '' %>
 
 <%= link_to 'Edit', edit_person_path(@person) if authorized? %> 
+
+

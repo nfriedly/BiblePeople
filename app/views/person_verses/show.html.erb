@@ -1,0 +1,13 @@
+<p>
+  <b>Person:</b>
+  <%=h @person_verse.person_id %>
+</p>
+
+<p>
+  <b>Verse:</b>
+  <%=h @person_verse.verse_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_verse_path(@person_verse) %> |
+<%= link_to 'Back', person_verses_path %>

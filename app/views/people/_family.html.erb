@@ -1,0 +1,32 @@
+<% depth = depth + 1 %>
+
+<div class="family depth-<%= depth %>">
+
+  <%= (lineup) ? '<div class="lineup">&nbsp;</div>' : '' %>
+
+  <%= person.linkName %>
+  
+  <% if( person.children.length > 0 && depth <= max_depth) %>
+  
+    <div class="linedown">&nbsp;</div>
+    
+    <%= (person.children && person.children.length > 1) ? '<div class="children">' : '' %>
+    
+      <% person.children.each do |child| %>
+        <%= render( :partial => "family", 
+          :locals => { 
+            :person => child, 
+            :lineup => (person.children.length > 1),
+            :depth => depth, 
+            :max_depth => max_depth 
+          })   %>
+      <% end %>
+      
+    <%= (person.children && person.children.length > 1) ? '</div>' : '' %>
+  
+  <% end %>
+    
+  <div class="clear"></div>
+    
+</div>
+

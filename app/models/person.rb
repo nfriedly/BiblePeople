@@ -10,10 +10,8 @@ class Person < ActiveRecord::Base
   has_many :children_mothered, :class_name => "Person" , :foreign_key =>
 'mother_id' 
   
-  belongs_to :mother, :class_name => 'Person', :foreign_key =>
-'mother_id' 
-  belongs_to :father, :class_name => 'Person', :foreign_key =>
-'father_id' 
+  belongs_to :father, :class_name => 'Person', :foreign_key => 'father_id' 
+  belongs_to :mother, :class_name => 'Person', :foreign_key => 'mother_id' 
 
   def name_attributes=(name_attributes)
     name_attributes.each do |name|
@@ -58,6 +56,7 @@ class Person < ActiveRecord::Base
     if(gender == "f")
       return "Female"
     end
+    ""
   end
   
   def children
@@ -70,22 +69,48 @@ class Person < ActiveRecord::Base
       return []
   end
   
-  def self.findSiblings p
-    find :all, :conditions => [ "(father_id = ? OR mother_id = ?) AND id != ?", p.father_id, p.mother_id, p.id ]
-  end
-  
   def siblings
     siblings = []
     if(mother && father)
-      siblings = mother.children.concat(father.children)
+      # careful! playing with the arrays directly changes the database!
+      mkids = mother.children[0, mother.children.length] 
+      fkids = father.children[0, father.children.length]
+      siblings = mkids.concat(fkids) # mother.children.concat(father.children)
     else
       if(mother)
-        siblings = mother.children
+        siblings = mother.children[0, mother.children.length]  # mother.children
       end
       if(father)
-        siblings = father.children
+        siblings = father.children[0, father.children.length] # father.children
       end
     end
+    # remove any duplicates and remove the person himself
+    siblings.uniq!
     siblings.delete_if { |p| p.id == id }
+  end
+  
+  # if called with no arguments, returns a link to the person
+  # if called with a string or array of words, it finds refferences to itself, links those, and returns the result in the same format
+  def linkName ( text=nil, thisName=nil )
+    thisName = thisName || name
+    if !text
+      return '<a href="/people/' + id.to_s  + '" class="person ' + genderName + '">' + thisName + '</a>'
+    end
+    
+    # make sure we're working with an array, but remember to return a string if we were given one
+    stringMode = text.is_a? String
+    text = text.split " " if stringMode
+    
+    # scan each word for each of the person's names
+    text.each do |word|
+      names.each do |name|
+        if(word.include? name.name) 
+          word.sub! ( name.name, linkName( nil, name.name ) )
+        end
+      end
+    end
+    
+    text = text.join(' ') if stringMode
+    return text
   end
 end

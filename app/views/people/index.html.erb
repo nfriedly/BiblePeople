@@ -11,10 +11,10 @@
 
 <% @people.each do |person| %>
   <tr>
-    <td><%= link_to(person.name, person) %></td> 
+    <td><%= person.linkName %></td> 
     <td><%=h person.genderName %></td>
-    <td><%= link_to (person.fatherName, person.father) unless !person.father %></td>
-    <td><%= link_to (person.motherName, person.mother) unless !person.mother %></td>
+    <td><%= person.father.linkName unless !person.father %></td>
+    <td><%= person.mother.linkName unless !person.mother %></td>
     <!-- td><  %= link_to "Family Tree", {:controller => "families", :action => "show", :id => person.id }  %  ></td -->
     <% if authorized? %>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>

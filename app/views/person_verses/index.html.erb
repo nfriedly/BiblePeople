@@ -1,0 +1,22 @@
+<h1>Listing person_verses</h1>
+
+<table>
+  <tr>
+    <th>Person</th>
+    <th>Verse</th>
+  </tr>
+
+<% @person_verses.each do |person_verse| %>
+  <tr>
+    <td><%= link_to person_verse.person.name, person_verse.person %></td>
+    <td><%= person_verse.verse.refference %></td>
+    <td><%= link_to 'Show', person_verse %></td>
+    <td><%= link_to 'Edit', edit_person_verse_path(person_verse) %></td>
+    <td><%= link_to 'Destroy', person_verse, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New person_verse', new_person_verse_path %>

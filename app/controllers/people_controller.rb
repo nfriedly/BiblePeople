@@ -16,8 +16,10 @@ class PeopleController < ApplicationController
   # GET /people/1.xml
   def show
     @person = Person.find(params[:id])
-    @siblings = Person.findSiblings(@person)
-
+    
+    @max_depth = params[:family_tree_depth] || 3 
+    @max_depth = @max_depth.to_i
+    
     respond_to do |format|
       format.html { render :layout => "main" } # show.html.erb
       format.xml  { render :xml => @person }
