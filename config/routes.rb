@@ -1,9 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :person_verses
+
   map.resources :users
 
   map.resources :names
 
-  map.resources :people, :collection => { :parent => :get }
+  map.resources :people, :collection => { :parent => :get, :verses => :get }
 
 
   map.resources :verses

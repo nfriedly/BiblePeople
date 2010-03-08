@@ -1,8 +1,8 @@
 class Person < ActiveRecord::Base
-  has_many :person_verses
+  has_many :person_verses, :dependent => :destroy
   has_many :verses, :through => :person_verses
   
-  has_many :names
+  has_many :names, :dependent => :destroy
   
   has_many :children_fathered, :class_name => "Person" , :foreign_key =>
 'father_id' 
@@ -18,6 +18,12 @@ class Person < ActiveRecord::Base
   def name_attributes=(name_attributes)
     name_attributes.each do |name|
       names.build({:name => name})
+    end
+  end
+  
+  def verse_attributes=(verse_attributes)
+    verse_attributes.each do |vid|
+      person_verses.build({:verse_id => vid[0]})
     end
   end
   
@@ -68,5 +74,18 @@ class Person < ActiveRecord::Base
     find :all, :conditions => [ "(father_id = ? OR mother_id = ?) AND id != ?", p.father_id, p.mother_id, p.id ]
   end
   
-  
+  def siblings
+    siblings = []
+    if(mother && father)
+      siblings = mother.children.concat(father.children)
+    else
+      if(mother)
+        siblings = mother.children
+      end
+      if(father)
+        siblings = father.children
+      end
+    end
+    siblings.delete_if { |p| p.id == id }
+  end
 end

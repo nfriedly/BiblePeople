@@ -16,8 +16,8 @@
 <% end %>
 
 <% for v in @verses %>
-  <h3 style="margin-bottom: 2px" class="refference" ><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></h3>
-  <p class="verse"><span><%= v.text.split(' ').join('</span> <span>') %></span></p>
+  <h3 style="margin-bottom: 2px" class="refference" ><%= v.refference %></h3>
+  <p class="verse"><%=v.linkedText authorized? %></p>
 <% end %>
 
 <%= will_paginate @verses %>

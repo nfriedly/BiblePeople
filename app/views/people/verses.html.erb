@@ -1,0 +1,31 @@
+<h3>
+  Verses containing "<%= @name %>" 
+  <%= (@page !=1 && @type != :all) ? "page " + @page : '' %>
+</h3>
+
+<% if(@verses.length == 0) %>
+<p>Sorry, no results were found</p>
+<% else %>
+  <% if (@page == 1 || @type == :all) %>
+    <input type="checkbox" class="check-all" checked="checked" /> All
+  <% else %>
+    <hr />
+  <% end %>
+<% end %>
+
+<% for v in @verses %>
+  <p class="verse">
+    <input type="checkbox"  name="person[verse_attributes][<%= v.id %>]" value="<%= v.id %>" checked="checked" />
+    <b class="refference" ><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></b> 
+    <%= v.linkedText false, @name %>
+  </p>
+<% end %>
+
+<% if (@page ==1 && @type != :all) %>
+    <%= will_paginate @verses, {
+      :class => "pagination", 
+      :inner_window => 40,
+      :previous_label => nil,
+      :next_label => ""
+    } %>
+<% end %>

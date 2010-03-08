@@ -112,4 +112,23 @@ class PeopleController < ApplicationController
       format.xml  { render :xml => @people }
     end
   end
+  
+  def verses
+    if(params[:q] && !params[:name])
+      params[:name] = params[:q]
+    end
+    
+    @name = params[:name]
+    @page = params[:page] || 1
+    @type = (@page == "all") ? :all : :paged
+
+    @verses = Verse.searchName(@name, @type, @page)
+    
+    respond_to do |format|
+      format.html { render :layout => false } 
+      format.json { render :json => @verses }
+      format.xml  { render :xml => @verses }
+    end
+  end
+  
 end

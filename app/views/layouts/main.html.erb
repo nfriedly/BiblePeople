@@ -35,6 +35,7 @@
         <%= link_to "People", people_path %>
         <% if authorized? %>
           <%= link_to "Names", names_path %>
+          <%= link_to "People-Verses", person_verses_path %>
           <%= link_to "Logout", { :controller => "sessions", :action => "destroy" }, :method => :delete %>
         <% else %>
           <%= link_to "Login", { :controller => "sessions", :action => "new" } %>
