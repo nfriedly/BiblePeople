@@ -113,4 +113,13 @@ class Person < ActiveRecord::Base
     text = text.join(' ') if stringMode
     return text
   end
+  
+  def self.findByNameOrId(name_or_id)
+    if name_or_id.class == 1.class
+      return find(name_or_id)
+    else 
+      return find(:all, {:joins => :names, :conditions => ['name like ?', name_or_id.to_s]})
+    end
+  end
+  
 end

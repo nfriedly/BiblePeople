@@ -14,11 +14,6 @@ class Search
     Verse.search(@query, page, @in)
   end
 
-  # checks if the query is a person's name and returns the appropriate url if so (otherwise nil)
-  def self.keyword(query)
-    nil
-  end
-
   def self.refference
     @in
   end

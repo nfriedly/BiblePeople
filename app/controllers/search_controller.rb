@@ -2,8 +2,9 @@ class SearchController < ApplicationController
 
   def index
     if(!params[:page]) 
-	redirectUrl = Search.keyword(params[:q])
-	redirect_to redirectUrl if redirectUrl
+      people = Name.findPeople(params[:q])
+      redirect_to '/people/' + params[:q] if people.length
+      return
     end
     @verses = Search.search(params[:q], params[:page])
     @terms = Search.terms

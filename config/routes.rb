@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  # for when multiple people have the same name
+  #map.connect 'person/:name/:id', controller => 'person', action => 'show'
+  
   map.resources :person_verses
 
   map.resources :users
@@ -7,10 +11,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :people, :collection => { :parent => :get, :verses => :get }
 
-
   map.resources :verses
   
   map.resources :sessions
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
 
