@@ -8,7 +8,8 @@
 <% end %>
 
 <% if(@refference) %>
-<p>Search for <b><%= @terms.join " " %></b> in <b><%= @refference.pretty %></b>
+<p>Search for <b><%= (@terms) ? @terms.join(" ") : '*' %></b> 
+<%= (@refference) ? 'in <b>' + @refference.pretty + '</b>' : '' %>
 <% end %>
 
 <% if(@verses.length == 0) %>
@@ -17,7 +18,7 @@
 
 <% for v in @verses %>
   <h3 style="margin-bottom: 2px" class="refference" ><%= v.refference %></h3>
-  <p class="verse"><%=v.linkedText authorized?, params[:q] %></p>
+  <p class="verse"><%=v.linkedText authorized?, @terms %></p>
 <% end %>
 
 <%= will_paginate @verses %>

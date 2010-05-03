@@ -1,0 +1,49 @@
+<h2><a href="/people/<%= @name %>"><%= @name %> Disambiguation</a></h2>
+
+<ul>
+
+  <% @people.each do |person| %>
+  
+    <li>
+      <h3><%= person.linkName %></h3>
+      <%
+      
+        fam = ""
+        
+        fam +=  "<p>" if (person.mother || person.father || person.children)
+        
+          if (person.mother || person.father)
+            fam +=  person.childWord.capitalize + " of "
+            fam += person.father.linkName if person.father
+            fam += " and " if (person.father && person.mother)
+            fam += person.mother.linkName if person.mother
+            fam += ". "
+          end
+          
+          if(person.children.length > 0)
+            fam += person.parentWord.capitalize + " of "
+            chilins = []
+            person.children.each do |child|
+              chilins << child.linkName
+            end
+            fam += chilins.join(', ') + ". "
+          end
+          
+        fam += "</p>" if  (person.mother || person.father || person.children)
+        
+      %>
+      
+      <%= fam %>
+      
+      <% 
+      fm = person.person_verses.firstMention
+      if fm
+        v = fm.verse
+      %>
+        <p>First mentioned in <b><%= v.refference %></b>:<%= v.linkedText %></p>
+      <% end %>
+    </li>
+
+  <% end %>
+  
+</ul>

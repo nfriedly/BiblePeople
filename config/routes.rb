@@ -1,7 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   
   # for when multiple people have the same name
-  #map.connect 'person/:name/:id', controller => 'person', action => 'show'
+  #todo: fix this
+  #map.id_person 'person/:id/:name', controller => 'people', action => 'show', :id => /\d+/, :name => /[A-Z]+.*/
   
   map.resources :person_verses
 
@@ -10,7 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :names
 
   map.resources :people, :collection => { :parent => :get, :verses => :get }
-
+  
   map.resources :verses
   
   map.resources :sessions

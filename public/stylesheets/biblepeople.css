@@ -20,6 +20,11 @@
 
 /* family tree styles */
 
+.family-tree {
+  width: 750px;
+  overflow:auto;
+}
+
 .parents {
   margin-left:0.5em;
   border: 1px solid grey;
@@ -41,12 +46,8 @@
   right: -1em;
 }
 
-.family {
-  float: left;
-}
-
-.family.multiple-children {
-  border-top: 1px solid grey;
+.family-tree td {
+  vertical-align: top;
 }
 
 .children {
@@ -54,11 +55,6 @@
   margin-left: 1em;
   clear:left;
 }
-
-/*.children > .family:last-child{
-  width:1px;
-  overflow:visible;
-}*/
 
 .family > a {
   margin-right: 1em ;
@@ -71,7 +67,6 @@
 .linedown {
   margin-left: 1em;
   border-left: 1px solid grey;
-  /*float:left;*/
 }
 
 .lineup {

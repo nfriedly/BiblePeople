@@ -17,5 +17,15 @@ class Name < ActiveRecord::Base
     # 'name like ? AND gender != ?', name.to_s + '%', not_gender
     find(:all, {:joins => :person, :conditions => ['name like ?', name.to_s + '%'], :limit=>10})
   end
+  
+  def self.isName(name)
+    hits = count( :conditions => ['name like ?', name.to_s] )
+    return (hits > 0)
+  end
+  
+  def self.isMultiplePeople(n)
+    hits = count( :conditions => ['name like ?', n.to_s] )
+    return (hits > 1)
+  end
 
 end

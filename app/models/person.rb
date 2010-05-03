@@ -59,11 +59,31 @@ class Person < ActiveRecord::Base
     ""
   end
   
+  def childWord
+    if(gender == "m")
+      return "son"
+    end
+    if(gender == "f")
+      return "daughter"
+    end
+    "child"
+  end
+  
+  def parentWord
+    if(gender == "m")
+      return "father"
+    end
+    if(gender == "f")
+      return "mother"
+    end
+    "parent"
+  end
+  
   def children
-      if(children_fathered.length)
+      if(children_fathered.length > 0)
         return children_fathered
       end
-      if(children_mothered.length)
+      if(children_mothered.length > 0)
         return children_mothered
       end
       return []
@@ -91,10 +111,10 @@ class Person < ActiveRecord::Base
   
   # if called with no arguments, returns a link to the person
   # if called with a string or array of words, it finds refferences to itself, links those, and returns the result in the same format
-  def linkName ( text=nil, thisName=nil )
+  def linkName ( text=nil, thisName=nil)
     thisName = thisName || name
     if !text
-      return '<a href="/people/' + id.to_s  + '" class="person ' + genderName + '">' + thisName + '</a>'
+      return '<a href="' + link  + '" class="person ' + genderName + '">' + thisName + '</a>'
     end
     
     # make sure we're working with an array, but remember to return a string if we were given one
@@ -104,7 +124,7 @@ class Person < ActiveRecord::Base
     # scan each word for each of the person's names
     text.each do |word|
       names.each do |name|
-        if(word.include? name.name) 
+        if(word.include?(name.name) && !word.include?('<a') ) # no double-linking
           word.sub! ( name.name, linkName( nil, name.name ) )
         end
       end
@@ -114,11 +134,38 @@ class Person < ActiveRecord::Base
     return text
   end
   
-  def self.findByNameOrId(name_or_id)
-    if name_or_id.class == 1.class
-      return find(name_or_id)
+  # uses the last name in the database if multiple exist
+  # or the id if more than one person shares that name
+  def link
+    #todo: allow the user to select which name to use
+    n = names.reverse[0].name
+    if Name.isMultiplePeople(n)
+        link_id = id
     else 
-      return find(:all, {:joins => :names, :conditions => ['name like ?', name_or_id.to_s]})
+        link_id = n
+    end
+    '/people/' + link_id.to_s
+  end
+  
+  # for checking if it's a name or an id that's passed in
+  def self.numeric?(object)
+    true if Float(object) rescue false
+  end
+  
+  # returns an array of people - may return more than 1 if it's a common name, or may return 0 if the person's not found
+  def self.findByNameOrId(name_or_id)
+    if numeric? name_or_id
+      person = find(name_or_id)
+      if(person) 
+        return [person]
+      else
+        return []
+      end
+    else 
+      return find(:all, {
+        :joins => :names, 
+        :conditions => ['name like ?', name_or_id.to_s]
+      })
     end
   end
   

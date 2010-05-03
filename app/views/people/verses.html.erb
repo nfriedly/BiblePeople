@@ -16,7 +16,7 @@
 <% for v in @verses %>
   <p class="verse">
     <input type="checkbox"  name="person[verse_attributes][<%= v.id %>]" value="<%= v.id %>" checked="checked" />
-    <b class="refference" ><%= v.book.book %> <%= v.chapter %>:<%= v.verse %></b> 
+    <b class="refference" ><%= v.refference %></b> 
     <%= v.linkedText false, @name %>
   </p>
 <% end %>

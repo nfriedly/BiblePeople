@@ -15,10 +15,24 @@ class PeopleController < ApplicationController
   # GET /people/1
   # GET /people/1.xml
   def show
-    @person = Person.findByNameOrId(params[:id])
     
-    #test case
-    @person = @person[0] #if (@person.class.is_a?(Array) && @person.length >= 1)
+    
+    @people= Person.findByNameOrId(params[:id])
+    
+    if (@people.length == 1) 
+      @person = @people[0]
+    else 
+      if(@people.length > 1)
+        @name = params[:id].capitalize
+        disambiguation
+        return
+      end
+    end 
+    
+    if(!@person)
+      redirect_to '/search?q=' +params[:id].is_a?(Numeric) #+ params[:id].to_s + '&page=1'
+      return
+    end
     
     @max_depth = params[:family_tree_depth] || 3 
     @max_depth = @max_depth.to_i
@@ -26,6 +40,14 @@ class PeopleController < ApplicationController
     respond_to do |format|
       format.html { render :layout => "main" } # show.html.erb
       format.xml  { render :xml => @person }
+    end
+  end
+  
+  
+  def disambiguation
+    respond_to do |format|
+      format.html { render :layout => "main", :template => "people/disambiguation.html"} # disambiguation.html.erb
+      format.xml  { render :xml => @people }
     end
   end
 
@@ -125,9 +147,10 @@ class PeopleController < ApplicationController
     
     @name = params[:name]
     @page = params[:page] || 1
-    @type = (@page == "all") ? :all : :paged
+    #@type = (@page == "all") ? :all : :paged
 
-    @verses = Verse.searchName(@name, @type, @page)
+    #@verses = Verse.searchName(@name, @type, @page)
+    @verses = Verse.search(@name, @page)
     
     respond_to do |format|
       format.html { render :layout => false } 

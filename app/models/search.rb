@@ -2,7 +2,7 @@ class Search
 
   @query = nil
   @in = nil
-  @terms = []
+  @terms = nil
   
 
   def self.search(query, page)
@@ -10,8 +10,7 @@ class Search
     if(query) 
       self.parse(query)
     end
-    @query = "" if isRefference
-    Verse.search(@query, page, @in)
+    Verse.search(@terms, page, @in)
   end
 
   def self.refference
@@ -23,18 +22,36 @@ class Search
   end
 
   def self.parse(query)
+    
+    require 'refference.rb'
+    
     @query = query
+    
+    # first see if the query has an IN portion with a refference following
     if (query.include? " IN ")
       parts = query.split(" IN ")
       in_str = parts.pop
-      @query = parts.join(" ") # in case they used " in " twice (?)
-      require 'refference.rb'
-      @in = Refference.new(in_str)
-      if(!@in.isValid)
-        @in = nil
+      @in = Refference.new(in_str)    
+      if(@in && @in.isValid)
+        @terms = parts.join.split # back to a string, then split on whitespace
+      end
+    # if there wasn't an IN portion, try the entire thing as a refference
+    else
+      @in = Refference.new(query)
+      if(@in && @in.isValid)
+        @terms = []
       end
     end
-    @terms = @query.split.collect {|c| c.downcase } # is downcase necessary?
+    
+    # cleanup
+    # put @in back to null if it's no good
+    if(@in && !@in.isValid)
+      @in = nil
+    end
+    # set the terms to everything if they havn't been set yet
+    if(!@terms.is_a?(Array))
+      @terms = @query.downcase 
+    end
   end
 
   def self.isRefference

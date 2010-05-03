@@ -15,47 +15,51 @@
 
 <h2>Family Tree of <%= @person.name %></h2>
 
-<% if(@person.mother && @person.father) %>
-  <div class="parents">
-    <%= link_to @person.father.name, @person.father %>
-    <%= link_to @person.mother.name, @person.mother %>
-  </div>
-  <div class="clear"></div>
-  <div class="linedown">&nbsp;</div>
-<% else if(@person.mother || @person.father) %>
-  <%= link_to @person.father.name, @person.father unless !@person.father %>
-  <%= link_to @person.mother.name, @person.mother unless ! @person.mother%>
-  <div class="linedown">&nbsp;</div>
-<% end end %>
+<div class="family-tree">
 
-<% if(@person.siblings.length > 0) %>
-  <div class="children">
-<% end %>
-
-<%= render( :partial => "family", 
-        :locals => { 
-          :person => @person, 
-          :lineup => (@person.siblings.length > 0) ,
-          :depth => 0, 
-          :max_depth => @max_depth
-        }
- ) %>
-  
-<% if(@person.siblings.length > 0) %>
-  <% @person.siblings.each do |sibling| %>
-    <div class="family depth-0">
-      <div class="lineup">&nbsp;</div>
-      <%= link_to sibling.name, sibling %>
+  <% if(@person.mother && @person.father) %>
+    <div class="parents">
+      <%= @person.father.linkName %>
+      <%= @person.mother.linkName %>
     </div>
+    <div class="clear"></div>
+    <div class="linedown">&nbsp;</div>
+  <% else if(@person.mother || @person.father) %>
+    <%= @person.father.linkName unless !@person.father %>
+    <%= @person.mother.linkName unless ! @person.mother%>
+    <div class="linedown">&nbsp;</div>
+  <% end end %>
+
+  <% if(@person.siblings.length > 0) %>
+    <table class="children"><tr>
   <% end %>
-  </div>
-<% end %>
 
-<div class="clear"></div>
+  <%= render( :partial => "family", 
+          :locals => { 
+            :person => @person, 
+            :lineup => (@person.siblings.length > 0) ,
+            :depth => 0, 
+            :max_depth => @max_depth
+          }
+   ) %>
+    
+  <% if(@person.siblings.length > 0) %>
+    <% @person.siblings.each do |sibling| %>
+      <td class="family depth-0">
+        <div class="lineup">&nbsp;</div>
+        <%= sibling.linkName %>
+      </td>
+    <% end %>
+    </tr></table>
+  <% end %>
+  
+  <div class="clear">&nbsp;</div>
 
-<p>&nbsp;</p>
+</div>
 
+<% if(!params['family_tree_depth']) %>
 <p><a href="?family_tree_depth=10">Show more of the family tree</a></p>
+<% end %>
 
 <% #todo: paginate this, preferably by book 
 %>

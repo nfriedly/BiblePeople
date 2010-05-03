@@ -1,6 +1,6 @@
 <% depth = depth + 1 %>
 
-<div class="family depth-<%= depth %>">
+<td class="family depth-<%= depth %>">
 
   <%= (lineup) ? '<div class="lineup">&nbsp;</div>' : '' %>
 
@@ -10,7 +10,7 @@
   
     <div class="linedown">&nbsp;</div>
     
-    <%= (person.children && person.children.length > 1) ? '<div class="children">' : '' %>
+    <table <%= (person.children.length > 1) ? 'class="children"' : '' %>><tr>
     
       <% person.children.each do |child| %>
         <%= render( :partial => "family", 
@@ -22,11 +22,9 @@
           })   %>
       <% end %>
       
-    <%= (person.children && person.children.length > 1) ? '</div>' : '' %>
+    </tr></table>
   
   <% end %>
     
-  <div class="clear"></div>
-    
-</div>
+</td>
 

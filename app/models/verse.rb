@@ -4,26 +4,76 @@ class Verse < ActiveRecord::Base
   has_many :person_verses
   has_many :people, :through => :person_verses
 
-  def self.search(search, page, refference)
+  def self.search(search, page, ref=nil, strict=true)
+    # a list of possible characters allowed to occur before or after words
+    # (essentially, we're making a list of characters that define word-boundrys)
+    before = [' ','(']
+    after = [' ','.',',',':',';','!','?',')']
+  
+    # make sure we're working with an array here
+    search = search.split if search.is_a? String
+    
     conditions = []
-    search.split(/\s+/).map{ |term| 
-      conditions << "text like " + sanitize('%' + term + '%') 
+    search.each{ |term| #(/\s+/)
+      if strict
+        
+        # we're going to have a sub-section for each word in the query
+        wordConditions = []
+        
+        # cases where the word is the last word in the verse
+        before.each{ |b|
+          wordConditions << "text like " + sanitize('%' + b + term) 
+        }
+
+        # cases where the word is the first word in the verse
+        after.each{ |a|
+          wordConditions << "text like " + sanitize(term + a + '%') 
+        }
+
+        #cases where the word is somewhere in the middle of the verse
+        before.each{ |b|
+          after.each{ |a|
+            wordConditions << "text like " +sanitize('%' + b + term + a + '%')
+          }
+        }
+        
+        # glue it all together and add it to the list of conditions
+        conditions << '(' + wordConditions.join(' OR ') + ')';
+      else
+        # in non-strict mode, we skip all the word-boundry bits
+        conditions << "text like " + sanitize('%' + term + '%') 
+      end
     }
-    if(refference) 
-      conditions << refference.sql
+    if(ref) 
+      conditions << ref.sql
     end
+    
+    # glue all of our conditions together
+    conditions = conditions.join(" AND ")
+    
+    #if the strict search returns no results, do a non-strict one instead
+    #finding :one is a lot faster than doing count(:all, :conditions => conditions) 
+    # wrapped in a try/catch because it fails sometimes :/
+    begin
+      if strict && find(:first, :conditions => conditions) == nil
+        return search(search, page, ref, false)
+      end
+    rescue
+      # do nothing, the next one should work
+    end
+    
     paginate :per_page => 20, :page => page,
-           :conditions => conditions.join(" AND ")
+           :conditions => conditions
   end
 
-  def self.searchName(name, type=:paged, page=0, per_page=20)
-    if(type == :all)
-      return find(:all, ["text like ?", '%' + name + '%'])
-    else
-      return paginate :per_page => per_page, :page => page,
-           :conditions => ["text like ?", '%' + name + '%']
-    end
-  end
+#  def self.searchName(name, type=:paged, page=0, per_page=20)
+#    if(type == :all)
+#      return find(:all, ["text like ?", '%' + name + '%'])
+#    else
+#      return paginate :per_page => per_page, :page => page,
+#           :conditions => ["text like ?", '%' + name + '%']
+#    end
+#  end
   
   def refference 
     book.book + " " + chapter.to_s + ":" + verse.to_s
@@ -43,20 +93,27 @@ class Verse < ActiveRecord::Base
     linkedWords = []
     words = text.split " "
     
-    #check it for people we should be linking
+    #link the names first
     people.each do |person|
-      words = person.linkName words
+      words = person.linkName(words)
     end
     
-    #scah each word
+    #scan each word
     words.each do |word|
       hit = false
-      
+      oword = word
+              
       # highlight it if appropriate
       highlight.each do |hword|
-        if word.include?(hword)
-          word.sub! hword, '<span class="highlight">' + hword + '</span>'
+        if word.downcase.include?(hword.downcase)
           hit = true
+          if word.include? '<' 
+            # more exact method disabled when links are present 
+            word = '<span class="highlight">' + word + '</span>'
+          else
+            pattern = Regexp.new('('+hword+')', true)  # case-insensitive, refference capturing regex
+            word.sub! pattern, '<span class="highlight">\\1</span>'
+          end
         end
       end
       
@@ -68,7 +125,7 @@ class Verse < ActiveRecord::Base
       # save the changes to our list of words
       linkedWords << word
     end
-    
+
     # return our results
     linkedWords.join(' ')
   end

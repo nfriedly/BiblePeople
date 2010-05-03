@@ -2,7 +2,7 @@ class Book < ActiveRecord::Base
   has_many :verse
 
   def self.findBooks(words)
-    if(words.class == " ".class)
+    if words.is_a? String
       words = words.split
     end
     conditions = []
@@ -13,7 +13,7 @@ class Book < ActiveRecord::Base
         words[0] = num + " " + words[0]
       end
     end
-    words.map{ |word|
+    words.each { |word|
       conditions << " book like " + sanitize(word + '%') if  not_a_word? word
     }
     find(:all, :conditions => conditions.join(" OR ")) unless conditions.length == 0

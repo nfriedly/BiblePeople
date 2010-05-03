@@ -4,18 +4,29 @@ $(document).ready(function(){
   
   if($("p.verse:first").length) {
 
+    //placeholders for the word actions dif
+    var WordActions;
+    var CPLink;
+    var WAWidth;
+     
      // create my word-actions div
-     $('<div id="word-actions" class="hoverbox"><a href="/people/new" id="create-person">Create Person</a></div>')
-        .appendTo('body');
-     var WordActions = $('#word-actions');
-     var CPLink = $('#create-person');
-     var WAWidth = WordActions.width()
+     $.createWordActionsDiv = function(){
+       $('<div id="word-actions" class="hoverbox"><a href="/people/new" id="create-person">Create Person</a></div>')
+          .appendTo('body');
+          WordActions = $('#word-actions');
+          CPLink = $('#create-person');
+          WAWidth = WordActions.width();
+          $.createWordActionsDiv = function(){}; // "destroy" itself (just hiding)
+      }
 
      // placeholder for the current selected word
      var Word;
 
      // event when a word is clicked
      $("p.verse span").live('click',function(){
+     
+        $.createWordActionsDiv(); // only does anything the first time
+        
         if(Word){
           Word.removeClass('active-word');
         }
