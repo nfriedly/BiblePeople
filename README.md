@@ -1,12 +1,14 @@
 # Bible People
 People and Famlies of the Bible
 
-Bible People is now offline as I do not currently have the time or resources to maintain it, 
-however the code and data has been preserved here, and you're completely welcome to all of it.
+Bible People is now offline as I do not currently have the resources to develop and maintain it.
+However the code and data has been preserved here, and you're completely welcome to all of it.
 
 The app is built on Rails v2.3.5 and uses sqlite so that all of the data is included in the git repo.
 
 Standard Rails readme below:
+
+----
 
 == Welcome to Rails
 
